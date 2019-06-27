@@ -7,7 +7,6 @@ var Spotify = require("node-spotify-api");
 
 var arg_api = process.argv[2];
 var spotify = new Spotify(keys.spotify);
-//console.log(spotify.credentials)
 
 // Displays Events given an artist namethe Bands in Town Artist Event api
 if (arg_api == "concert-this") {
@@ -34,8 +33,6 @@ if (arg_api == "spotify-this-song") {
   }
   getSong(song)
 }
-
-
 
 if (arg_api == "movie-this") {
   var movie = "";
@@ -70,10 +67,8 @@ if (arg_api == "do-what-it-says") {
             getConcert(query)
         }
 
-
     })
 }
-
 
 
 // Helper Functions
